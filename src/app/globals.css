@@ -1,0 +1,15 @@
+body {
+  background-color: #f3f1ea;
+}
+
+@font-face {
+  font-family: 'Canela';
+  src: url('/fonts/Canela-Bold-Trial.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Canela-Med';
+  src: url('/fonts/Canela-Medium-Trial.otf') format('opentype');
+  font-style: normal;
+}

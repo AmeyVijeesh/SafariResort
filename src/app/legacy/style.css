@@ -1,0 +1,160 @@
+/* Legacy Page */
+.legacyPage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f7f4;
+  padding-top: 100px;
+}
+
+.legacyHero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 5% 100px;
+  text-align: center;
+}
+
+.legacyTitle {
+  font-family: 'Canela-Med', serif;
+  font-size: 56px;
+  color: rgb(82, 36, 36);
+  margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.legacySubtitle {
+  font-family: 'Spectre', serif;
+  font-size: 20px;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.legacyContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5% 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.personCard {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 60px;
+  align-items: center;
+  opacity: 0;
+}
+
+.personCard:nth-child(even) {
+  direction: rtl;
+}
+
+.personCard:nth-child(even) > * {
+  direction: ltr;
+}
+
+.personImage {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.personImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.personCard:hover .personImage img {
+  transform: scale(1.03);
+}
+
+.personContent {
+  padding: 20px;
+}
+
+.personName {
+  font-family: 'Canela-Med', serif;
+  font-size: 40px;
+  color: rgb(82, 36, 36);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.personTitle {
+  font-family: 'Spectre', serif;
+  font-size: 16px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 32px;
+}
+
+.personDescription {
+  font-family: 'Spectre', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .personCard,
+  .personCard:nth-child(even) {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .personImage {
+    height: 450px;
+  }
+
+  .personName {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .legacyPage {
+    padding-top: 80px;
+  }
+
+  .legacyHero {
+    padding: 60px 5% 80px;
+  }
+
+  .legacyTitle {
+    font-size: 40px;
+  }
+
+  .legacySubtitle {
+    font-size: 18px;
+  }
+
+  .legacyContent {
+    gap: 80px;
+    padding-bottom: 80px;
+  }
+
+  .personImage {
+    height: 400px;
+  }
+
+  .personName {
+    font-size: 32px;
+  }
+
+  .personDescription {
+    font-size: 17px;
+  }
+
+  .personContent {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,401 @@
+.lodge {
+  background-color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Hero Section - Singita style */
+.lodge__hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.lodge__hero-img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lodge__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lodge__hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  max-width: 600px;
+  text-align: center;
+}
+
+.lodge__hero-title {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  opacity: 0;
+}
+
+.lodge__hero-subtitle {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 300;
+  line-height: 1.4;
+  opacity: 0;
+}
+
+/* Intro Section */
+.lodge__intro {
+  padding: 10% 5%;
+  background-color: #f9f8f6;
+  opacity: 0;
+}
+
+.lodge__intro-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.lodge__intro-title {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #2a2a2a;
+  margin-bottom: 40px;
+}
+
+.lodge__intro-text {
+  font-family: 'Spectre', serif;
+  font-size: clamp(16px, 1.8vw, 22px);
+  line-height: 1.8;
+  color: #5a5a5a;
+  font-weight: 300;
+}
+
+/* Single image rows */
+.lodge__image-row {
+  width: 100%;
+  padding: 0 5%;
+  margin: 8% 0;
+}
+
+.lodge__image {
+  width: 100%;
+  height: auto;
+  max-height: 900px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Full bleed image */
+.lodge__image-full {
+  width: 100%;
+  margin: 8% 0;
+  overflow: hidden;
+}
+
+.lodge__image-full-img {
+  width: 100%;
+  height: auto;
+  max-height: 1000px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Layout section - text + image side by side */
+.lodge__layout {
+  padding: 8% 5%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.lodge__layout-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.lodge__layout-title {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(24px, 3.5vw, 42px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #2a2a2a;
+  margin-bottom: 30px;
+}
+
+.lodge__layout-para {
+  font-family: 'Spectre', serif;
+  font-size: clamp(16px, 1.6vw, 20px);
+  line-height: 1.8;
+  color: #5a5a5a;
+  font-weight: 300;
+}
+
+.lodge__layout-img-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.lodge__layout-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Specs Section */
+.lodge__specs {
+  padding: 8% 5%;
+  background-color: #f9f8f6;
+  opacity: 0;
+}
+
+.lodge__specs-title {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.lodge__specs-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.lodge__spec-item {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  border-top: 1px solid #d5d5d5;
+}
+
+.lodge__spec-label {
+  font-family: 'Spectre', serif;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.lodge__spec-value {
+  font-family: 'Spectre', serif;
+  font-size: 18px;
+  color: #2a2a2a;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Conservation Section - Singita style */
+.lodge__conservation {
+  padding: 10% 5%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.lodge__conservation-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lodge__conservation-title {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #2a2a2a;
+  margin-bottom: 40px;
+}
+
+.lodge__conservation-text {
+  font-family: 'Spectre', serif;
+  font-size: clamp(16px, 1.7vw, 20px);
+  line-height: 1.8;
+  color: #5a5a5a;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+/* Final Section - CTA you liked */
+.lodge__final {
+  padding: 12% 5%;
+  background-color: #f9f8f6;
+  text-align: center;
+  opacity: 0;
+}
+
+.lodge__final-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lodge__final-text {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(24px, 3vw, 40px);
+  line-height: 1.5;
+  color: #2a2a2a;
+  margin-bottom: 60px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.lodge__final-btn {
+  font-family: 'Spectre', serif;
+  font-size: 13px;
+  padding: 20px 50px;
+  background-color: transparent;
+  color: #2a2a2a;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.lodge__final-btn:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.lodge__final-note {
+  font-family: 'Spectre', serif;
+  font-size: 14px;
+  margin-top: 40px;
+  color: #999;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .lodge__hero-content {
+    left: 5%;
+    bottom: 5%;
+  }
+
+  .lodge__layout-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .lodge__specs-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .lodge__experience-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .lodge__conservation {
+    padding: 12% 5%;
+  }
+
+  .lodge__intro {
+    padding: 15% 5%;
+  }
+
+  .lodge__layout {
+    padding: 12% 5%;
+  }
+
+  .lodge__specs {
+    padding: 12% 5%;
+  }
+
+  .lodge__experience {
+    padding: 12% 5%;
+  }
+
+  .lodge__final {
+    padding: 15% 5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .lodge__hero {
+    height: 80vh;
+  }
+
+  .lodge__image-row {
+    margin: 12% 0;
+  }
+}
+
+/* Experience Section */
+.lodge__experience {
+  padding: 10% 5%;
+  background-color: #fff;
+  opacity: 0;
+}
+
+.lodge__experience-title {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #2a2a2a;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.lodge__experience-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.lodge__experience-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.lodge__experience-img-wrapper {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.lodge__experience-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lodge__experience-subtitle {
+  font-family: 'Canela-Med', serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 400;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+.lodge__experience-text {
+  font-family: 'Spectre', serif;
+  font-size: clamp(15px, 1.5vw, 18px);
+  line-height: 1.7;
+  color: #5a5a5a;
+  font-weight: 300;
+}

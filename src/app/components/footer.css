@@ -1,0 +1,134 @@
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #2a2621;
+  color: #e8e6e1;
+  padding: 80px 5% 40px;
+}
+
+.footerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(232, 230, 225, 0.2);
+}
+
+.footerBrand {
+  max-width: 300px;
+}
+
+.footerLogo {
+  font-family: 'Canela-Med', serif;
+  font-size: 32px;
+  color: #e8e6e1;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.footerTagline {
+  font-family: 'Spectre', serif;
+  font-size: 15px;
+  color: #b8b5af;
+  font-style: italic;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 80px;
+}
+
+.footerCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footerHeading {
+  font-family: 'Spectre', serif;
+  font-size: 13px;
+  color: #b8b5af;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.footerLink {
+  font-family: 'Spectre', serif;
+  font-size: 15px;
+  color: #e8e6e1;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footerLink:hover {
+  opacity: 0.6;
+}
+
+.footerBottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerCopy {
+  font-family: 'Spectre', serif;
+  font-size: 14px;
+  color: #b8b5af;
+}
+
+.footerLegal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footerLegalLink {
+  font-family: 'Spectre', serif;
+  font-size: 14px;
+  color: #b8b5af;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footerLegalLink:hover {
+  opacity: 0.6;
+}
+
+.footerDivider {
+  color: #b8b5af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 5% 30px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 40px;
+  }
+
+  .footerLinks {
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footerLogo {
+    font-size: 28px;
+  }
+}

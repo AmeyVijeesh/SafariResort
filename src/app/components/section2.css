@@ -1,0 +1,156 @@
+/* Experience Section */
+.experienceSection {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 8%;
+}
+
+.experienceHero {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.experienceHeroImage {
+  width: 100%;
+  height: 100%;
+}
+
+.experienceHeroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.experienceIntro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 120px 5% 100px;
+  text-align: center;
+}
+
+.experienceTitle {
+  font-family: 'Canela-Med', serif;
+  font-size: 52px;
+  color: rgb(82, 36, 36);
+  margin-bottom: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.experienceDesc {
+  font-family: 'Spectre', serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.experienceGrid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.experienceCard {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.experienceCardImage {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.experienceCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: block;
+}
+
+.experienceCard:hover .experienceCardImage img {
+  transform: scale(1.08);
+}
+
+.experienceCardContent {
+  padding: 32px 20px 0;
+}
+
+.experienceCardTitle {
+  font-family: 'Canela-Med', serif;
+  font-size: 28px;
+  color: rgb(82, 36, 36);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.experienceCardDesc {
+  font-family: 'Spectre', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .experienceHero {
+    height: 60vh;
+  }
+
+  .experienceTitle {
+    font-size: 42px;
+  }
+
+  .experienceDesc {
+    font-size: 18px;
+  }
+
+  .experienceGrid {
+    gap: 40px;
+  }
+
+  .experienceCardImage {
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experienceHero {
+    height: 50vh;
+  }
+
+  .experienceIntro {
+    padding: 80px 5% 60px;
+  }
+
+  .experienceTitle {
+    font-size: 36px;
+  }
+
+  .experienceDesc {
+    font-size: 17px;
+  }
+
+  .experienceGrid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .experienceCardImage {
+    height: 350px;
+  }
+
+  .experienceCardTitle {
+    font-size: 24px;
+  }
+}

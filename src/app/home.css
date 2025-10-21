@@ -1,0 +1,185 @@
+.homeContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.homeTitle {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  max-width: 90%;
+  font-family: 'Canela-Med', serif;
+  font-size: 60px;
+  white-space: nowrap;
+}
+
+.homeSec {
+  width: 100%;
+  background-color: #f3f1ea;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.sectionTit {
+  font-family: 'Canela-Med', serif;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(82, 36, 36);
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 10px 0;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+
+.sectionPara {
+  font-size: 18px;
+  font-family: 'Spectre', serif;
+  width: 60%;
+  margin-bottom: 5%;
+}
+
+.sectionImg {
+  border-radius: 12px;
+  width: 55%;
+}
+
+.sectionLink {
+  text-decoration: underline;
+}
+
+/* Suites Section */
+.suitesSection {
+  width: 100%;
+  background-color: #fff;
+  padding: 8% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suitesTitle {
+  font-family: 'Canela-Med', serif;
+  font-size: 48px;
+  text-align: center;
+  color: rgb(82, 36, 36);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.suitesSubtitle {
+  font-family: 'Spectre', serif;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 80px;
+  font-style: italic;
+}
+
+.suitesGrid {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.suiteCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  opacity: 0;
+}
+
+.suiteCardReverse {
+  direction: rtl;
+}
+
+.suiteCardReverse > * {
+  direction: ltr;
+}
+
+.suiteImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.suiteImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.suiteCard:hover .suiteImage {
+  transform: scale(1.05);
+}
+
+.suiteContent {
+  padding: 0 40px;
+}
+
+.suiteName {
+  font-family: 'Canela-Med', serif;
+  font-size: 36px;
+  color: rgb(82, 36, 36);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.suiteDescription {
+  font-family: 'Spectre', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 32px;
+}
+
+.suiteFeatures {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.suiteFeatures span {
+  font-family: 'Spectre', serif;
+  font-size: 14px;
+  padding: 8px 20px;
+  background-color: #f3f1ea;
+  color: rgb(82, 36, 36);
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .suiteCard,
+  .suiteCardReverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .suiteContent {
+    padding: 0 20px;
+  }
+
+  .suitesTitle {
+    font-size: 36px;
+  }
+
+  .suiteName {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,210 @@
+/* Suites Section */
+.suitesSection {
+  width: 100%;
+  background-color: #f8f7f4;
+  padding: 10% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.suitesIntro {
+  text-align: center;
+  margin-bottom: 100px;
+  max-width: 800px;
+}
+
+.suitesTitle {
+  font-family: 'Canela-Med', serif;
+  font-size: 56px;
+  color: rgb(82, 36, 36);
+  margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+.suitesSubtitle {
+  font-family: 'Spectre', serif;
+  font-size: 22px;
+  color: #666;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.suitesContent {
+  width: 100%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.suitesText {
+  padding-top: 40px;
+  position: sticky;
+  top: 120px;
+}
+
+.suitesDescription {
+  font-family: 'Spectre', serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 32px;
+}
+
+.suitesFeatures {
+  display: flex;
+  gap: 50px;
+  margin: 60px 0;
+  padding: 40px 0;
+  border-top: 1px solid rgba(82, 36, 36, 0.2);
+  border-bottom: 1px solid rgba(82, 36, 36, 0.2);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.featureNumber {
+  font-family: 'Canela-Med', serif;
+  font-size: 42px;
+  color: rgb(82, 36, 36);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.featureText {
+  font-family: 'Spectre', serif;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.suitesLink {
+  font-family: 'Spectre', serif;
+  font-size: 16px;
+  color: rgb(82, 36, 36);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(82, 36, 36);
+  padding-bottom: 4px;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.suitesLink:hover {
+  opacity: 0.6;
+}
+
+.suitesImages {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.suiteImageLarge {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.suiteImageLarge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.suiteImageGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.suiteImageSmall {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.suiteImageSmall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.suiteImageSmall:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .suitesContent {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .suitesText {
+    position: relative;
+    top: 0;
+  }
+
+  .suitesTitle {
+    font-size: 42px;
+  }
+
+  .suitesFeatures {
+    gap: 30px;
+  }
+
+  .featureNumber {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .suitesSection {
+    padding: 15% 5%;
+  }
+
+  .suitesIntro {
+    margin-bottom: 60px;
+  }
+
+  .suitesTitle {
+    font-size: 36px;
+  }
+
+  .suitesSubtitle {
+    font-size: 18px;
+  }
+
+  .suitesDescription {
+    font-size: 16px;
+  }
+
+  .suiteImageLarge {
+    height: 400px;
+  }
+
+  .suiteImageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .suiteImageSmall {
+    height: 300px;
+  }
+
+  .suitesFeatures {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
