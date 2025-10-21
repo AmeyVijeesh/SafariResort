@@ -20,22 +20,28 @@ const canela = localFont({
   variable: '--font-canela',
 });
 
+// Add metadata export for title and favicon
+export const metadata = {
+  title: 'The Zarari — Safari Resort in Botswana',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={canela.variable}>
-      <head>
-        <link rel="icon" type="image/png" href="/favicon.ico" />
-        <title>The Zarari — Safari Resort in Botswana</title>
-        <Script
-          id="fontawesome"
-          src="https://kit.fontawesome.com/a076d05399.js"
-          strategy="afterInteractive"
-        />
-      </head>
       <body>
         <Navbar />
         {children}
         <Footer />
+
+        {/* Move Script to end of body and use proper strategy */}
+        <Script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
