@@ -2,7 +2,6 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Script from 'next/script';
 
 const canela = localFont({
   src: [
@@ -20,7 +19,6 @@ const canela = localFont({
   variable: '--font-canela',
 });
 
-// Add metadata export for title and favicon
 export const metadata = {
   title: 'The Zarari — Safari Resort in Botswana',
   icons: {
@@ -35,13 +33,6 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
-
-        {/* Move Script to end of body and use proper strategy */}
-        <Script
-          src="https://kit.fontawesome.com/a076d05399.js"
-          strategy="lazyOnload"
-          crossOrigin="anonymous"
-        />
       </body>
     </html>
   );
