@@ -1,22 +1,33 @@
 import './globals.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Script from 'next/script';
+import localFont from 'next/font/local';
+
+const canela = localFont({
+  src: [
+    {
+      path: './public/fonts/Canela-Medium-Trial.otf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-canela',
+});
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={canela.variable}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <title>The Zarari - Safari Resort in Botswana</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-          rel="stylesheet"
-        />
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       </head>
       <body>
+        <Script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          strategy="beforeInteractive"
+        />
+
         <Navbar />
         {children}
         <Footer />
