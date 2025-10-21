@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-page-custom-font */
+/* eslint-disable @next/next/no-sync-scripts */
 import './globals.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -7,7 +9,7 @@ import localFont from 'next/font/local';
 const canela = localFont({
   src: [
     {
-      path: './public/fonts/Canela-Medium-Trial.otf',
+      path: '/fonts/Canela-Medium-Trial.otf',
       weight: '700',
       style: 'normal',
     },
@@ -21,13 +23,13 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <title>The Zarari - Safari Resort in Botswana</title>
-      </head>
-      <body>
         <Script
+          id="fontawesome"
           src="https://kit.fontawesome.com/a076d05399.js"
           strategy="beforeInteractive"
         />
-
+      </head>
+      <body>
         <Navbar />
         {children}
         <Footer />
