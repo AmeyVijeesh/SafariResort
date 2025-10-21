@@ -1,7 +1,7 @@
 import localFont from 'next/font/local';
 import './globals.css';
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Script from 'next/script';
 
 const canela = localFont({
